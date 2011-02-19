@@ -44,6 +44,6 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         instrumentation.waitForIdleSync();
 
         // result statement
-        assertEquals(activity.getString(R.string.count), textView.getText());
+        assertEquals(activity.getString(R.string.count) + 1, textView.getText());
     }
 }
