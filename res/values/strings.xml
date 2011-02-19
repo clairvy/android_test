@@ -2,4 +2,6 @@
 <resources>
     <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">Count</string>
+    <string name="button">変更</string>
+    <string name="count">カウント</string>
 </resources>
