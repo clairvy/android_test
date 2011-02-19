@@ -20,14 +20,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         // initialize
-        count = 0;
+        count = Count.init();
 
         final TextView textView = (TextView)findViewById(R.id.textview01);
         Button button = (Button)findViewById(R.id.button01);
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                count += 1;
+                count = Count.next(count);
                 textView.setText(getString(R.string.count) + count);
             }
         });
